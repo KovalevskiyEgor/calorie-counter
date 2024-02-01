@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: DEB8B8;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.caloriecounter.ProductListController">
+    <children>
+        <AnchorPane layoutY="82.0" prefHeight="318.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <TextField fx:id="findProduct" layoutX="508.0" layoutY="102.0" prefHeight="68.0" prefWidth="184.0" promptText="Поиск продукта" style="-fx-border-color: DEB8B8; -fx-border-radius: 5; -fx-border-width: 2;">
+                    <font>
+                        <Font name="OCR A Extended" size="15.0" />
+                    </font>
+                </TextField>
+            <TableView fx:id="productsTable" layoutX="14.0" layoutY="6.0" prefHeight="306.0" prefWidth="487.0" style="-fx-border-color: DEB8B8; -fx-border-width: 3;">
+              <columns>
+                <TableColumn fx:id="productName" prefWidth="127.20001828670502" text="Название" />
+                <TableColumn fx:id="productProteins" prefWidth="60.79998779296875" text="Белки" />
+                  <TableColumn fx:id="productFats" prefWidth="89.60003662109375" text="Жиры" />
+                  <TableColumn fx:id="productCarbs" prefWidth="88.0" text="Углеводы" />
+                  <TableColumn fx:id="productCalories" prefWidth="119.199951171875" text="Калории" />
+              </columns>
+            </TableView>
+            </children>
+        </AnchorPane>
+      <Label layoutX="230.0" layoutY="14.0" prefHeight="68.0" prefWidth="275.0" text="BestHealth" textFill="WHITE">
+         <font>
+            <Font name="OCR A Extended" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToMainWIndowButton" layoutX="14.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="106.0" style="-fx-background-color: DEB8B8;" text="←" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
